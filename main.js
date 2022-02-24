@@ -20,13 +20,13 @@ let a = [3,4,5,76,87,7,6,-7,-6,-5,-3,-2];
 
 function countPositivesSumNegatives(input) {
  let arrContainer = [0,0];
- if(input === null && input.length === 0){
+ if(input === null && input.length < 1){
      return console.log([]);
  }
  for(let i = 0; i < input.length; i++){
      if(input[i] <= 0){
          arrContainer[1] += input[i]
-     }else if(input[i] > 0){
+     }else {
          arrContainer[0] += 1
      }
  }
