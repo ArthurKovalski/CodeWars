@@ -32,4 +32,14 @@ function countPositivesSumNegatives(input) {
  }
  return console.log(arrContainer);
 }
-countPositivesSumNegatives(a)
+countPositivesSumNegatives(a);
+
+const a1 = ['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'];
+
+function findNeedle(haystack) {
+    // let needleIn = haystack.filter((item,index) => item === 'needle');
+    // return console.log(needleIn[])
+    console.log(`${"found the needle at position"} ${haystack.indexOf('needle')}`)
+  }
+
+  findNeedle(a1);
