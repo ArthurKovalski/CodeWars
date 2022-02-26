@@ -34,6 +34,9 @@ function countPositivesSumNegatives(input) {
 }
 countPositivesSumNegatives(a);
 
+
+// To find a needle in junk 
+
 const a1 = ['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'];
 
 function findNeedle(haystack) {
@@ -43,3 +46,39 @@ function findNeedle(haystack) {
   }
 
   findNeedle(a1);
+
+
+//   Convert number to reversed array of digits
+
+let number = 43323552;
+
+function digitize(n) {
+    let b = []
+n = n.toString().split('').reverse();
+for(let i = 0; i < n.length; i++){
+b.push(Number(n[i]))
+}
+console.log(b);
+  }
+
+  digitize(number);
+
+//   Fake Binary
+
+let digitStr = '43216832077'
+function fakeBin(x){
+    let bs = [];
+   x = x.split('') 
+    let arrToNumber = x.map(item => Number(item));
+    for(let i = 0; i < arrToNumber.length; i++){
+        if(arrToNumber[i] < 5){
+            bs.push(0)
+        }else if(arrToNumber[i] >= 5){
+            bs.push(1)
+        }
+    }
+    
+    console.log(bs.join(''))
+  }
+
+  fakeBin(digitStr)
