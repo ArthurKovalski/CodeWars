@@ -68,17 +68,32 @@ console.log(b);
 let digitStr = '43216832077'
 function fakeBin(x){
     let bs = [];
-   x = x.split('') 
+   x = x.split(''); 
     let arrToNumber = x.map(item => Number(item));
     for(let i = 0; i < arrToNumber.length; i++){
         if(arrToNumber[i] < 5){
-            bs.push(0)
+            bs.push(0);
         }else if(arrToNumber[i] >= 5){
-            bs.push(1)
+            bs.push(1);
         }
     }
     
-    console.log(bs.join(''))
+    console.log(bs.join(''));
   }
 
-  fakeBin(digitStr)
+  fakeBin(digitStr);
+
+
+//   Sentence Smash
+
+ let randomWord = ['hello', 'world', 'this', 'is', 'great']; 
+ 
+ function smash (words) {
+words =  words.join(' ');
+console.log(words);
+ };
+
+
+ smash(randomWord);
+
+//  Filter out the geese
